@@ -1,0 +1,70 @@
+html {
+  min-height: 100%;
+}
+.body{
+  background-image: linear-gradient(rgb(75, 0, 0),rgb(119, 67, 0));
+  color: wheat;
+  text-align: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.devour-burger{
+  background-image: radial-gradient(rgb(75, 0, 0),rgb(119, 67, 0));
+}
+
+.delete-burger{
+  background-image: radial-gradient(rgb(75, 0, 0),rgb(119, 67, 0));
+}
+
+#addburger{
+  background-image: radial-gradient(rgb(75, 0, 0),rgb(119, 67, 0));
+}
+
+#newburger{
+  background-image: linear-gradient(to right, rgb(75, 0, 0),rgb(119, 67, 0));
+}
+
+.card{
+  margin: 10px;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+
+.burger-image{
+  background: none;
+  height: 150px;
+  width: 150px;
+}
+
+.create-form{
+  margin: 30px;
+}
+
+.jumbotron {
+    background-image: url("../img/burgerpic2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 3%;
+  }
+  #newburger {
+    color: #5c5c5c;
+  }
+  #leftside {
+    background-color: #5c5c5c;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  #rightside {
+    background-color: #e49322;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+  }

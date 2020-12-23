@@ -1,0 +1,42 @@
+<h1>Burgers!</h1>
+
+<h2>Burgers that are not devoured!</h2>
+
+
+<ul class="card-container">
+  {{#each burgers}}
+    {{#unless this.devoured}}
+    <div class="card">
+      <span>{{this.id}} - {{this.burger_name}}</span>
+      <button type="button" class="devour-burger" id="eatbutton" data-id="{{this.id}}"
+                            data-newDevoured="{{devour}}">Devour!</button>
+    </div>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Burgers that are devoured!</h2>
+
+<ul class="card-container">
+  {{#each burgers}}
+    {{#if this.devoured}}
+    <div class="card">
+      <span>{{this.id}} - {{this.burger_name}}</span>
+      <button type="button" class="delete-burger" id="deletebutton" data-id="{{this.id}}"
+                            data-newDevoured="{{devour}}">Remove</button>
+    </div>
+    {{/if}}
+  {{/each}}
+</ul>
+
+
+<form class="create-form">
+<h2>Add a Burger</h2>
+  <div class="form-group">
+    <label for="bgr">Burger Name:</label>
+    <input type="text" id="newburger" name="burger">
+  </div>
+
+  <button type="submit" id="addburger">Add Burger</button>
+  <img class="burger-image" src="/assets/Floating-burger-PNG.png" alt="burger">
+</form>
